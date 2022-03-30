@@ -1,8 +1,8 @@
 class Earthly < Formula
   desc "Build automation tool for the container era"
   homepage "https://earthly.dev/"
-  url "https://github.com/earthly/earthly-staging/archive/v0.1648514765.2298039390.tar.gz"
-  sha256 "d27dfa5606295235410903f60872b13d5a1d93c4d12c2b6815dfcae003f0aa0d"
+  url "https://github.com/earthly/earthly-staging/archive/v0.1648663119.2253833797.tar.gz"
+  sha256 "b38df9b7bf171ea4a288bac919b288c7fdcd0ecac63a426cc79fc76a78bdc196"
   license "BUSL-1.1"
   head "https://github.com/earthly/earthly-staging.git"
 
@@ -19,7 +19,7 @@ class Earthly < Formula
   depends_on "go@1.17" => :build
 
   def install
-    ldflags = "-X main.DefaultBuildkitdImage=docker.io/earthly/buildkitd:v#{version} -X main.Version=v#{version} -X main.GitSha=88f94c5ed342a0162c202f5ce666d8350bf3fcc4 "
+    ldflags = "-X main.DefaultBuildkitdImage=docker.io/earthly/buildkitd:v#{version} -X main.Version=v#{version} -X main.GitSha=8656c645a89d95c49068e23cc94c51c861a0c629 "
     tags = "dfrunmount dfrunsecurity dfsecrets dfssh dfrunnetwork dfheredoc forceposix"
     system "go", "build",
         "-tags", tags,
