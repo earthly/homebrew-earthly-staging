@@ -1,8 +1,8 @@
 class Earthly < Formula
   desc "Build automation tool for the container era"
   homepage "https://earthly.dev/"
-  url "https://github.com/earthly/earthly-staging/archive/v0.1656694254.164208763.tar.gz"
-  sha256 "b87c9420dc611f32ed5c8414e41dbe1a1c4d469521b85b3b212ac79472416675"
+  url "https://github.com/earthly/earthly-staging/archive/v0.1669152645.4128045784.tar.gz"
+  sha256 "01209bd7f5f322c43da9679bc2166019a148f63919f03be56078a6f5ff4b51c9"
   license "BUSL-1.1"
   head "https://github.com/earthly/earthly-staging.git"
 
